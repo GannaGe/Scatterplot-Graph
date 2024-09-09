@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  color: #444441;
+  background-color: #76ba00;
+  background-image: url("https://www.transparenttextures.com/patterns/hexabump.png");
+}
+
+#svgContainer {
+  position: relative;
+  background-color: white;
+  box-shadow: 4px 4px 20px #444441;
+}
+
+#title {
+  font-size: 30px;
+  color: inherit;
+}
+
+#legend {
+  font-size: 18px;
+  color: inherit;
+  margin-top: 10px;
+}
+
+.dot {
+  stroke: #000;
+}
+
+#tooltip {
+  position: absolute;
+  font-size: 12px;
+  padding: 10px;
+  opacity: 0.9;
+  color: inherit;
+  background-color: #9bedf5;
+  border-radius: 4px;
+}
+
+@media (min-width) {
+  svg #container {
+    width: 800px;
+  }
+}
